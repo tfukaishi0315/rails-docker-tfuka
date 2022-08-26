@@ -8,7 +8,7 @@ jobs:
       - image: circleci/ruby:2.7
     working_directory: ~/rails-docker-tfuka/src
     steps:
-      - chechout:
+      - checkout:
           path: ~/rails-docker-tfuka
       - ruby/install-deps
 
