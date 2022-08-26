@@ -1,6 +1,6 @@
 version: 2.1
 orbs:
-   ruby: circleci/ruby@1.8.0
+   ruby: circleci/ruby@1.1.2
 
 jobs:
   build:
@@ -20,7 +20,6 @@ test:
         MYSQL_ROOT_PASSWORD: password
         MYSQL_DATABASE: app_test
         MYSQL_USER: root
-
   environment:
     BUNDLE_JOBS: "3"
     BUNDLE_RETRY: "3"
